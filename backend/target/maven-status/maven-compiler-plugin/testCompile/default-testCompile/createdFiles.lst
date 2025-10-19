@@ -1,3 +1,4 @@
 com\example\qualitydemo\ProductControllerTest.class
 com\example\qualitydemo\SeleniumRegistrationTest.class
 com\example\qualitydemo\UserControllerTest.class
+com\example\qualitydemo\ExtraCoverageTest.class

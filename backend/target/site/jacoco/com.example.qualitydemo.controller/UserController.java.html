@@ -9,28 +9,28 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 @RequestMapping(&quot;/api/users&quot;)
-<span class="nc" id="L12">public class UserController {</span>
-<span class="nc" id="L13">    private final Map&lt;Long, User&gt; store = new HashMap&lt;&gt;();</span>
-<span class="nc" id="L14">    private final AtomicLong idGen = new AtomicLong(1);</span>
+<span class="fc" id="L12">public class UserController {</span>
+<span class="fc" id="L13">    private final Map&lt;Long, User&gt; store = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L14">    private final AtomicLong idGen = new AtomicLong(1);</span>
 
     @GetMapping
     public List&lt;User&gt; list() {
-<span class="nc" id="L18">        return new ArrayList&lt;&gt;(store.values());</span>
+<span class="fc" id="L18">        return new ArrayList&lt;&gt;(store.values());</span>
     }
 
     @PostMapping
     public ResponseEntity&lt;User&gt; create(@RequestBody User user) {
-<span class="nc" id="L23">        long id = idGen.getAndIncrement();</span>
-<span class="nc" id="L24">        user.setId(id);</span>
-<span class="nc" id="L25">        store.put(id, user);</span>
-<span class="nc" id="L26">        return ResponseEntity.ok(user);</span>
+<span class="fc" id="L23">        long id = idGen.getAndIncrement();</span>
+<span class="fc" id="L24">        user.setId(id);</span>
+<span class="fc" id="L25">        store.put(id, user);</span>
+<span class="fc" id="L26">        return ResponseEntity.ok(user);</span>
     }
 
     @GetMapping(&quot;/{id}&quot;)
     public ResponseEntity&lt;User&gt; get(@PathVariable Long id) {
-<span class="nc" id="L31">        User u = store.get(id);</span>
-<span class="nc bnc" id="L32" title="All 2 branches missed.">        if (u == null) return ResponseEntity.notFound().build();</span>
-<span class="nc" id="L33">        return ResponseEntity.ok(u);</span>
+<span class="fc" id="L31">        User u = store.get(id);</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">        if (u == null) return ResponseEntity.notFound().build();</span>
+<span class="fc" id="L33">        return ResponseEntity.ok(u);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

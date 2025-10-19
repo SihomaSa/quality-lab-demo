@@ -5,12 +5,12 @@ import java.util.*;
 
 @RestController
 @RequestMapping(&quot;/api/products&quot;)
-<span class="nc" id="L8">public class ProductController {</span>
+<span class="fc" id="L8">public class ProductController {</span>
     @GetMapping
     public List&lt;Map&lt;String,Object&gt;&gt; list() {
-<span class="nc" id="L11">        return List.of(</span>
-<span class="nc" id="L12">            Map.of(&quot;id&quot;,1,&quot;name&quot;,&quot;Laptop&quot;,&quot;price&quot;,1200),</span>
-<span class="nc" id="L13">            Map.of(&quot;id&quot;,2,&quot;name&quot;,&quot;Phone&quot;,&quot;price&quot;,700)</span>
+<span class="fc" id="L11">        return List.of(</span>
+<span class="fc" id="L12">            Map.of(&quot;id&quot;,1,&quot;name&quot;,&quot;Laptop&quot;,&quot;price&quot;,1200),</span>
+<span class="fc" id="L13">            Map.of(&quot;id&quot;,2,&quot;name&quot;,&quot;Phone&quot;,&quot;price&quot;,700)</span>
         );
     }
 }

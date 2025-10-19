@@ -1,7 +1,9 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 quality-lab-demo-backend,com.example.qualitydemo.controller,AuthController,34,0,4,0,6,0,4,0,2,0
-quality-lab-demo-backend,com.example.qualitydemo.controller,PageController,7,0,0,0,3,0,3,0,3,0
-quality-lab-demo-backend,com.example.qualitydemo.controller,ProductController,23,0,0,0,4,0,2,0,2,0
-quality-lab-demo-backend,com.example.qualitydemo.controller,UserController,53,0,2,0,11,0,5,0,4,0
+quality-lab-demo-backend,com.example.qualitydemo.controller,HealthController.User,24,0,0,0,7,0,7,0,7,0
+quality-lab-demo-backend,com.example.qualitydemo.controller,HealthController,15,0,0,0,4,0,4,0,4,0
+quality-lab-demo-backend,com.example.qualitydemo.controller,PageController,0,7,0,0,0,3,0,3,0,3
+quality-lab-demo-backend,com.example.qualitydemo.controller,ProductController,0,23,0,0,0,4,0,2,0,2
+quality-lab-demo-backend,com.example.qualitydemo.controller,UserController,0,53,0,2,0,11,0,5,0,4
 quality-lab-demo-backend,com.example.qualitydemo,QualityLabDemoApplication,8,0,0,0,3,0,2,0,2,0
-quality-lab-demo-backend,com.example.qualitydemo.model,User,36,0,0,0,10,0,8,0,8,0
+quality-lab-demo-backend,com.example.qualitydemo.model,User,0,36,0,0,0,10,0,8,0,8
