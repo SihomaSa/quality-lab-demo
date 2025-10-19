@@ -1,0 +1,5 @@
+com\example\qualitydemo\QualityLabDemoApplication.class
+com\example\qualitydemo\controller\PageController.class
+com\example\qualitydemo\model\User.class
+com\example\qualitydemo\controller\ProductController.class
+com\example\qualitydemo\controller\UserController.class
